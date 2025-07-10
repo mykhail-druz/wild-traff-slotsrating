@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Policy - Slotsrating</title>
+    <meta name="description" content="Learn about how Slotsrating uses cookies and similar technologies to enhance your browsing experience and provide personalized content.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-light: #818cf8;
+            --primary-dark: #4f46e5;
+            --secondary: #06b6d4;
+            --accent: #f59e0b;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --error: #ef4444;
+            --purple: #8b5cf6;
+            --pink: #ec4899;
+            
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #0f0f17;
+            --bg-tertiary: #1a1a25;
+            --bg-card: #1e1e2e;
+            --bg-glass: rgba(255, 255, 255, 0.02);
+            --text-primary: #ffffff;
+            --text-secondary: #b4b4c8;
+            --text-muted: #6b7280;
+            
+            --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-secondary: linear-gradient(135deg, #8b5cf6 0%, #06b6d4 100%);
+            --gradient-accent: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --gradient-success: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            --gradient-gold: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+            --gradient-rainbow: linear-gradient(45deg, #667eea, #764ba2, #f093fb, #f5576c, #4facfe, #00f2fe);
+            
+            --border-color: rgba(255, 255, 255, 0.08);
+            --border-accent: rgba(255, 255, 255, 0.15);
+            --shadow-glow: 0 0 40px rgba(99, 102, 241, 0.15);
+            --shadow-card: 0 25px 50px rgba(0, 0, 0, 0.5);
+            --shadow-intense: 0 35px 60px rgba(99, 102, 241, 0.3);
+            --border-radius: 20px;
+            --border-radius-lg: 24px;
+            --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            --blur: 20px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Background Effects */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(139, 92, 246, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(236, 72, 153, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 40% 80%, rgba(6, 182, 212, 0.15) 0%, transparent 50%);
+            z-index: -2;
+            animation: backgroundShift 20s ease-in-out infinite;
+        }
+
+        @keyframes backgroundShift {
+            0%, 100% { opacity: 0.7; }
+            50% { opacity: 1; }
+        }
+
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 1rem 0;
+            background: rgba(10, 10, 15, 0.8);
+            backdrop-filter: blur(var(--blur));
+            border-bottom: 1px solid var(--border-color);
+            transition: var(--transition);
+        }
+
+        .header.scrolled {
+            padding: 0.5rem 0;
+            background: rgba(10, 10, 15, 0.95);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2rem;
+            font-weight: 800;
+            background: var(--gradient-rainbow);
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+            animation: gradientShift 3s ease-in-out infinite;
+        }
+
+        @keyframes gradientShift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+        }
+
+        .nav-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            position: relative;
+            transition: var(--transition);
+            padding: 0.5rem 0;
+        }
+
+        .nav-link::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gradient-primary);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--text-primary);
+            transform: translateY(-2px);
+        }
+
+        .nav-link:hover::before,
+        .nav-link.active::before {
+            width: 100%;
+        }
+
+        .nav-link.active {
+            color: var(--primary-light);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 8rem 0 4rem;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+        }
+
+        .hero-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 30% 40%, rgba(99, 102, 241, 0.2) 0%, transparent 50%),
+                radial-gradient(circle at 70% 60%, rgba(139, 92, 246, 0.2) 0%, transparent 50%);
+            z-index: -1;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .hero-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--bg-glass);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--border-accent);
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--primary-light);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .hero h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #ffffff 0%, #a1a1aa 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin-bottom: 3rem;
+            line-height: 1.7;
+        }
+
+        /* Last Updated Banner */
+        .last-updated {
+            background: var(--bg-glass);
+            backdrop-filter: blur(var(--blur));
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            margin-bottom: 3rem;
+            text-align: center;
+            border-left: 4px solid var(--primary);
+        }
+
+        .last-updated .date {
+            font-weight: 700;
+            color: var(--primary-light);
+            font-size: 1.1rem;
+        }
+
+        /* Cookie Settings Panel */
+        .cookie-settings {
+            background: var(--bg-glass);
+            backdrop-filter: blur(var(--blur));
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius-lg);
+            padding: 3rem;
+            margin-bottom: 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cookie-settings::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-success);
+        }
+
+        .cookie-settings h3 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .cookie-toggle-group {
+            display: grid;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .cookie-toggle {
+            background: var(--bg-tertiary);
+            border-radius: 12px;
+            padding: 1.5rem;
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+        }
+
+        .cookie-toggle:hover {
+            border-color: var(--primary);
+        }
+
+        .toggle-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .toggle-title {
+            font-weight: 700;
+            color: var(--text-primary);
+            font-size: 1.1rem;
+        }
+
+        .toggle-switch {
+            position: relative;
+            width: 60px;
+            height: 30px;
+            background: var(--bg-card);
+            border-radius: 15px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .toggle-switch.active {
+            background: var(--success);
+        }
+
+        .toggle-switch.disabled {
+            background: var(--text-muted);
+            cursor: not-allowed;
+        }
+
+        .toggle-slider {
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 24px;
+            height: 24px;
+            background: white;
+            border-radius: 50%;
+            transition: var(--transition);
+        }
+
+        .toggle-switch.active .toggle-slider {
+            transform: translateX(30px);
+        }
+
+        .toggle-description {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: var(--transition);
+            text-align: center;
+            border: none;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            font-size: 1rem;
+            margin-right: 1rem;
+        }
+
+        .btn-primary {
+            background: var(--gradient-primary);
+            color: white;
+            box-shadow: var(--shadow-glow);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-intense);
+        }
+
+        .btn-secondary {
+            background: var(--bg-glass);
+            color: var(--text-secondary);
+            border: 1px solid var(--border-color);
+        }
+
+        .btn-secondary:hover {
+            color: var(--text-primary);
+            border-color: var(--primary);
+        }
+
+        /* Content Cards */
+        .content-card {
+            background: var(--bg-glass);
+            backdrop-filter: blur(var(--blur));
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius-lg);
+            padding: 3rem;
+            margin-bottom: 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .content-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-primary);
+        }
+
+        .content-card h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            color: var(--text-primary);
+            position: relative;
+        }
+
+        .content-card h3 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.4rem;
+            color: var(--primary-light);
+            margin: 2.5rem 0 1.5rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .content-card h4 {
+            font-size: 1.2rem;
+            color: var(--text-primary);
+            margin: 2rem 0 1rem 0;
+            font-weight: 600;
+        }
+
+        .content-card p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+
+        .content-card ul {
+            color: var(--text-secondary);
+            margin: 2rem 0;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .content-card ul li {
+            margin-bottom: 1rem;
+            line-height: 1.7;
+            position: relative;
+            padding-left: 2rem;
+            font-size: 1.05rem;
+        }
+
+        .content-card ul li::before {
+            content: '▶';
+            position: absolute;
+            left: 0;
+            color: var(--primary-light);
+            font-size: 0.8rem;
+        }
+
+        /* Cookie Table */
+        .cookie-table {
+            background: var(--bg-tertiary);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            margin: 2rem 0;
+            border: 1px solid var(--border-color);
+        }
+
+        .cookie-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .cookie-table th {
+            background: var(--bg-card);
+            padding: 1.5rem;
+            text-align: left;
+            font-weight: 700;
+            color: var(--text-primary);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .cookie-table td {
+            padding: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-secondary);
+        }
+
+        .cookie-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .cookie-table tr:hover {
+            background: var(--bg-glass);
+        }
+
+        /* Info Boxes */
+        .info-box {
+            background: var(--bg-glass);
+            backdrop-filter: blur(var(--blur));
+            border-radius: var(--border-radius-lg);
+            padding: 3rem;
+            margin: 3rem 0;
+            border: 1px solid var(--border-color);
+            position: relative;
+        }
+
+        .info-box.warning {
+            border-left: 4px solid var(--warning);
+        }
+
+        .info-box.success {
+            border-left: 4px solid var(--success);
+        }
+
+        .info-box.secondary {
+            border-left: 4px solid var(--secondary);
+        }
+
+        .info-box h3 {
+            font-family: 'Orbitron', sans-serif;
+            margin-bottom: 1.5rem;
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .info-box.warning h3 {
+            color: var(--warning);
+        }
+
+        .info-box.success h3 {
+            color: var(--success);
+        }
+
+        .info-box.secondary h3 {
+            color: var(--secondary);
+        }
+
+        .info-box p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+
+        /* Table of Contents */
+        .table-of-contents {
+            background: var(--bg-tertiary);
+            border-radius: var(--border-radius);
+            padding: 2.5rem;
+            margin-bottom: 3rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .table-of-contents h3 {
+            font-family: 'Orbitron', sans-serif;
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .toc-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .toc-list li {
+            margin-bottom: 0.75rem;
+        }
+
+        .toc-list a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem;
+            border-radius: 8px;
+        }
+
+        .toc-list a:hover {
+            color: var(--primary-light);
+            background: var(--bg-glass);
+            transform: translateX(5px);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--bg-primary);
+            padding: 4rem 0 2rem;
+            border-top: 1px solid var(--border-color);
+            position: relative;
+        }
+
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: var(--gradient-primary);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-section h4 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-light);
+            transform: translateX(5px);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-link {
+            width: 50px;
+            height: 50px;
+            background: var(--bg-glass);
+            border: 1px solid var(--border-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+            transition: var(--transition);
+            text-decoration: none;
+        }
+
+        .social-link:hover {
+            background: var(--gradient-primary);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .footer-disclaimer {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            margin-top: 2rem;
+            border: 1px solid var(--border-color);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+            
+            .hero {
+                padding: 6rem 0 3rem;
+            }
+            
+            .container {
+                padding: 0 1rem;
+            }
+
+            .content-card,
+            .cookie-settings {
+                padding: 2rem;
+            }
+
+            .table-of-contents {
+                padding: 2rem;
+            }
+
+            .cookie-table {
+                overflow-x: auto;
+            }
+
+            .toggle-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .content-card,
+        .cookie-settings {
+            animation: fadeInUp 0.6s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="index.html" class="logo">Slotsrating</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+                <li><a href="tips.html" class="nav-link">Tips</a></li>
+                <li><a href="responsible-gaming.html" class="nav-link">Responsible Gaming</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-cookie-bite"></i>
+                    <span>Cookie Policy</span>
+                </div>
+                <h1>Cookie Policy</h1>
+                <p>Learn how Slotsrating uses cookies and similar technologies to enhance your browsing experience, analyze site traffic, and provide personalized content.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Last Updated Banner -->
+    <section class="container">
+        <div class="last-updated">
+            <p><strong>Last Updated:</strong> <span class="date">January 15, 2025</span></p>
+            <p>We regularly review and update our cookie practices to ensure transparency and compliance.</p>
+        </div>
+    </section>
+
+    <!-- Cookie Settings Panel -->
+    <section class="container">
+        <div class="cookie-settings">
+            <h3><i class="fas fa-cog"></i> Manage Cookie Preferences</h3>
+            <p style="margin-bottom: 2rem; color: var(--text-secondary);">You can control which types of cookies we use by adjusting the settings below. Your preferences will be saved and applied during your future visits.</p>
+            
+            <div class="cookie-toggle-group">
+                <div class="cookie-toggle">
+                    <div class="toggle-header">
+                        <div class="toggle-title">Essential Cookies</div>
+                        <div class="toggle-switch disabled">
+                            <div class="toggle-slider"></div>
+                        </div>
+                    </div>
+                    <div class="toggle-description">
+                        These cookies are necessary for the website to function properly. They enable basic features like page navigation and access to secure areas. The website cannot function properly without these cookies.
+                    </div>
+                </div>
+
+                <div class="cookie-toggle">
+                    <div class="toggle-header">
+                        <div class="toggle-title">Analytics Cookies</div>
+                        <div class="toggle-switch active" data-cookie-type="analytics">
+                            <div class="toggle-slider"></div>
+                        </div>
+                    </div>
+                    <div class="toggle-description">
+                        These cookies help us understand how visitors interact with our website by collecting and reporting information anonymously. This helps us improve our website performance and user experience.
+                    </div>
+                </div>
+
+                <div class="cookie-toggle">
+                    <div class="toggle-header">
+                        <div class="toggle-title">Marketing Cookies</div>
+                        <div class="toggle-switch" data-cookie-type="marketing">
+                            <div class="toggle-slider"></div>
+                        </div>
+                    </div>
+                    <div class="toggle-description">
+                        These cookies are used to deliver advertisements that are relevant to you. They may also limit the number of times you see an advertisement and help measure the effectiveness of advertising campaigns.
+                    </div>
+                </div>
+
+                <div class="cookie-toggle">
+                    <div class="toggle-header">
+                        <div class="toggle-title">Preference Cookies</div>
+                        <div class="toggle-switch" data-cookie-type="preferences">
+                            <div class="toggle-slider"></div>
+                        </div>
+                    </div>
+                    <div class="toggle-description">
+                        These cookies allow the website to remember choices you make and provide enhanced, more personal features. They may be set by us or by third-party providers whose services we have added to our pages.
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 2rem;">
+                <button class="btn btn-primary" onclick="saveCookiePreferences()">
+                    <i class="fas fa-save"></i> Save Preferences
+                </button>
+                <button class="btn btn-secondary" onclick="acceptAllCookies()">
+                    <i class="fas fa-check"></i> Accept All
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Table of Contents -->
+    <section class="container">
+        <div class="table-of-contents">
+            <h3><i class="fas fa-list"></i> Table of Contents</h3>
+            <ol class="toc-list">
+                <li><a href="#what-are-cookies"><i class="fas fa-angle-right"></i> What Are Cookies?</a></li>
+                <li><a href="#how-we-use-cookies"><i class="fas fa-angle-right"></i> How We Use Cookies</a></li>
+                <li><a href="#types-of-cookies"><i class="fas fa-angle-right"></i> Types of Cookies We Use</a></li>
+                <li><a href="#cookie-details"><i class="fas fa-angle-right"></i> Detailed Cookie Information</a></li>
+                <li><a href="#third-party-cookies"><i class="fas fa-angle-right"></i> Third-Party Cookies</a></li>
+                <li><a href="#managing-cookies"><i class="fas fa-angle-right"></i> Managing Your Cookies</a></li>
+                <li><a href="#updates"><i class="fas fa-angle-right"></i> Policy Updates</a></li>
+                <li><a href="#contact"><i class="fas fa-angle-right"></i> Contact Information</a></li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- Cookie Policy Content -->
+    <section class="container">
+        <div class="content-card">
+            <h2 id="what-are-cookies">What Are Cookies?</h2>
+            <p>Cookies are small text files that are placed on your device when you visit a website. They are widely used to make websites work more efficiently and to provide a better user experience. Cookies contain information that is transferred to your device's storage.</p>
+            
+            <p>Most websites use cookies to collect information about your browsing habits. This information is used to improve the website's functionality, analyze site performance, and deliver personalized content and advertisements.</p>
+
+            <div class="info-box success">
+                <h3><i class="fas fa-info-circle"></i> Cookie Benefits</h3>
+                <p>Cookies help us provide you with a better experience by remembering your preferences, keeping you logged in, and showing you relevant content. Without cookies, websites would not be able to offer many of the convenient features you expect.</p>
+            </div>
+
+            <h3 id="how-we-use-cookies"><i class="fas fa-cogs"></i> How We Use Cookies</h3>
+            
+            <p>Slotsrating uses cookies for several important purposes:</p>
+
+            <h4>Website Functionality</h4>
+            <ul>
+                <li>Remember your language and region preferences</li>
+                <li>Keep track of items in your favorites or wishlist</li>
+                <li>Maintain your login status across sessions</li>
+                <li>Store your cookie consent preferences</li>
+                <li>Enable essential security features</li>
+            </ul>
+
+            <h4>Performance and Analytics</h4>
+            <ul>
+                <li>Monitor website traffic and user behavior</li>
+                <li>Identify popular content and pages</li>
+                <li>Understand how users navigate our site</li>
+                <li>Detect and resolve technical issues</li>
+                <li>Measure the effectiveness of our content</li>
+            </ul>
+
+            <h4>Personalization</h4>
+            <ul>
+                <li>Customize content based on your interests</li>
+                <li>Remember your casino preferences</li>
+                <li>Show relevant casino recommendations</li>
+                <li>Provide personalized bonus offers</li>
+                <li>Tailor the user interface to your preferences</li>
+            </ul>
+
+            <h3 id="types-of-cookies"><i class="fas fa-layer-group"></i> Types of Cookies We Use</h3>
+
+            <h4>Essential Cookies</h4>
+            <p>These cookies are strictly necessary for the operation of our website. They enable basic functions like page navigation and access to secure areas of the website. The website cannot function properly without these cookies.</p>
+            
+            <div class="info-box warning">
+                <h3><i class="fas fa-exclamation-triangle"></i> Cannot Be Disabled</h3>
+                <p>Essential cookies cannot be disabled as they are required for the basic functionality of our website. Disabling them would prevent you from using core features of our service.</p>
+            </div>
+
+            <h4>Performance Cookies</h4>
+            <p>These cookies collect information about how visitors use our website, such as which pages are visited most often and if visitors get error messages from web pages. These cookies don't collect information that identifies a visitor personally.</p>
+
+            <h4>Functionality Cookies</h4>
+            <p>These cookies allow the website to remember choices you make (such as your username, language, or region) and provide enhanced, more personal features. They may also be used to provide services you have asked for such as watching a video or commenting on a blog.</p>
+
+            <h4>Targeting/Advertising Cookies</h4>
+            <p>These cookies are used to deliver advertisements more relevant to you and your interests. They are also used to limit the number of times you see an advertisement and help measure the effectiveness of advertising campaigns.</p>
+
+            <h3 id="cookie-details"><i class="fas fa-table"></i> Detailed Cookie Information</h3>
+
+            <p>Below is a comprehensive list of cookies used on our website:</p>
+
+            <div class="cookie-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Cookie Name</th>
+                            <th>Purpose</th>
+                            <th>Type</th>
+                            <th>Duration</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Slotsrating_session</strong></td>
+                            <td>Maintains user session state and login status</td>
+                            <td>Essential</td>
+                            <td>Session</td>
+                        </tr>
+                        <tr>
+                            <td><strong>cookie_consent</strong></td>
+                            <td>Stores your cookie consent preferences</td>
+                            <td>Essential</td>
+                            <td>1 year</td>
+                        </tr>
+                        <tr>
+                            <td><strong>language_pref</strong></td>
+                            <td>Remembers your language selection</td>
+                            <td>Functional</td>
+                            <td>6 months</td>
+                        </tr>
+                        <tr>
+                            <td><strong>_ga</strong></td>
+                            <td>Google Analytics - distinguishes unique users</td>
+                            <td>Analytics</td>
+                            <td>2 years</td>
+                        </tr>
+                        <tr>
+                            <td><strong>_gid</strong></td>
+                            <td>Google Analytics - distinguishes unique users</td>
+                            <td>Analytics</td>
+                            <td>24 hours</td>
+                        </tr>
+                        <tr>
+                            <td><strong>_gat</strong></td>
+                            <td>Google Analytics - throttles request rate</td>
+                            <td>Analytics</td>
+                            <td>1 minute</td>
+                        </tr>
+                        <tr>
+                            <td><strong>affiliate_ref</strong></td>
+                            <td>Tracks affiliate referrals for casino partnerships</td>
+                            <td>Marketing</td>
+                            <td>30 days</td>
+                        </tr>
+                        <tr>
+                            <td><strong>user_preferences</strong></td>
+                            <td>Stores your casino and game preferences</td>
+                            <td>Functional</td>
+                            <td>1 year</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 id="third-party-cookies"><i class="fas fa-external-link-alt"></i> Third-Party Cookies</h3>
+
+            <p>We also use cookies from trusted third-party services to enhance your experience:</p>
+
+            <h4>Google Analytics</h4>
+            <p>We use Google Analytics to understand how visitors interact with our website. Google Analytics uses cookies to collect information such as:</p>
+            <ul>
+                <li>Number of visitors to our site</li>
+                <li>Pages visited and time spent on each page</li>
+                <li>Geographic location of visitors</li>
+                <li>Device and browser information</li>
+                <li>Traffic sources and referral websites</li>
+            </ul>
+
+            <div class="info-box secondary">
+                <h3><i class="fas fa-shield-alt"></i> Privacy Protection</h3>
+                <p>We have configured Google Analytics to anonymize IP addresses and we do not allow Google to use the data for other Google services. You can opt out of Google Analytics tracking by visiting: <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" style="color: var(--secondary);">Google Analytics Opt-out</a></p>
+            </div>
+
+            <h4>Social Media Cookies</h4>
+            <p>Our website includes social media buttons and widgets from platforms like Facebook, Twitter, and YouTube. These services may set cookies when you interact with their content on our site.</p>
+
+            <h4>Affiliate Partner Cookies</h4>
+            <p>We work with casino affiliate networks to track referrals and provide you with exclusive bonuses. These cookies help us:</p>
+            <ul>
+                <li>Track successful casino registrations</li>
+                <li>Provide you with exclusive bonus offers</li>
+                <li>Ensure you receive any applicable cashback or rewards</li>
+                <li>Measure the effectiveness of our partnerships</li>
+            </ul>
+
+            <h3 id="managing-cookies"><i class="fas fa-sliders-h"></i> Managing Your Cookies</h3>
+
+            <p>You have several options for managing cookies on our website:</p>
+
+            <h4>Our Cookie Settings</h4>
+            <p>Use the cookie preference panel at the top of this page to control which types of cookies we use. Your choices will be saved and applied during future visits.</p>
+
+            <h4>Browser Settings</h4>
+            <p>Most web browsers allow you to control cookies through their settings. You can:</p>
+            <ul>
+                <li>Block all cookies from all websites</li>
+                <li>Block cookies from specific websites</li>
+                <li>Delete existing cookies from your device</li>
+                <li>Set your browser to ask before accepting cookies</li>
+                <li>Use private/incognito browsing mode</li>
+            </ul>
+
+            <div class="info-box warning">
+                <h3><i class="fas fa-exclamation-triangle"></i> Impact of Disabling Cookies</h3>
+                <p>Disabling cookies may affect your experience on our website. Some features may not work properly, and you may not be able to access certain areas of the site. We recommend allowing essential cookies at minimum.</p>
+            </div>
+
+            <h4>Browser-Specific Instructions</h4>
+
+            <p><strong>Google Chrome:</strong></p>
+            <ul>
+                <li>Click the three dots menu → Settings → Privacy and security → Cookies and other site data</li>
+                <li>Choose your preferred cookie settings</li>
+                <li>You can also click the lock icon in the address bar to manage cookies for our site specifically</li>
+            </ul>
+
+            <p><strong>Mozilla Firefox:</strong></p>
+            <ul>
+                <li>Click the menu button → Options → Privacy & Security</li>
+                <li>Under "Cookies and Site Data" choose your preferred settings</li>
+                <li>Click "Manage Data" to view and delete specific cookies</li>
+            </ul>
+
+            <p><strong>Safari:</strong></p>
+            <ul>
+                <li>Safari menu → Preferences → Privacy</li>
+                <li>Choose your cookie and website data settings</li>
+                <li>Click "Manage Website Data" to view and remove specific cookies</li>
+            </ul>
+
+            <p><strong>Microsoft Edge:</strong></p>
+            <ul>
+                <li>Click the three dots menu → Settings → Cookies and site permissions</li>
+                <li>Click "Cookies and site data" to manage your settings</li>
+                <li>Use "See all cookies and site data" to manage specific cookies</li>
+            </ul>
+
+            <h4>Mobile Devices</h4>
+            
+            <p><strong>iOS (Safari):</strong></p>
+            <ul>
+                <li>Settings → Safari → Privacy & Security</li>
+                <li>Toggle "Block All Cookies" or choose "Block Cross-Site Tracking"</li>
+                <li>Use "Clear History and Website Data" to remove existing cookies</li>
+            </ul>
+
+            <p><strong>Android (Chrome):</strong></p>
+            <ul>
+                <li>Chrome app → Three dots menu → Settings → Site settings → Cookies</li>
+                <li>Toggle cookies on or off, or choose "Block third-party cookies"</li>
+                <li>Go to Storage to clear existing cookies</li>
+            </ul>
+
+            <h3 id="cookie-retention"><i class="fas fa-calendar-alt"></i> Cookie Retention</h3>
+
+            <p>Different cookies have different lifespans:</p>
+
+            <h4>Session Cookies</h4>
+            <p>These are temporary cookies that are deleted when you close your browser. They are used for essential functions like maintaining your login state during your visit.</p>
+
+            <h4>Persistent Cookies</h4>
+            <p>These cookies remain on your device for a set period or until you delete them manually. The retention period varies:</p>
+            <ul>
+                <li><strong>Short-term (1-30 days):</strong> Affiliate tracking, recent preferences</li>
+                <li><strong>Medium-term (1-6 months):</strong> Language settings, basic preferences</li>
+                <li><strong>Long-term (1-2 years):</strong> Analytics data, user recognition</li>
+            </ul>
+
+            <h3 id="international-transfers"><i class="fas fa-globe"></i> International Data Transfers</h3>
+
+            <p>Some of our third-party cookie providers may transfer data outside your country. We ensure that appropriate safeguards are in place:</p>
+            <ul>
+                <li>Google Analytics data is processed under Google's privacy framework</li>
+                <li>Social media cookies are governed by respective platform privacy policies</li>
+                <li>All transfers comply with applicable data protection laws</li>
+                <li>We use providers that maintain adequate data protection standards</li>
+            </ul>
+
+            <h3 id="updates"><i class="fas fa-sync-alt"></i> Policy Updates</h3>
+
+            <p>We may update this Cookie Policy from time to time to reflect changes in our practices or legal requirements. When we make significant changes, we will:</p>
+            <ul>
+                <li>Update the "Last Modified" date at the top of this policy</li>
+                <li>Notify users via email or website banner for material changes</li>
+                <li>Provide a summary of key changes</li>
+                <li>Request renewed consent where required by law</li>
+            </ul>
+
+            <div class="info-box success">
+                <h3><i class="fas fa-bell"></i> Stay Informed</h3>
+                <p>We encourage you to review this Cookie Policy periodically to stay informed about our cookie practices. You can always access the most current version on our website.</p>
+            </div>
+
+            <h3 id="your-rights"><i class="fas fa-user-shield"></i> Your Rights</h3>
+
+            <p>Under applicable privacy laws, you may have the following rights regarding cookies:</p>
+            <ul>
+                <li><strong>Right to Consent:</strong> Control which cookies are placed on your device</li>
+                <li><strong>Right to Withdraw:</strong> Change your cookie preferences at any time</li>
+                <li><strong>Right to Information:</strong> Know what cookies we use and why</li>
+                <li><strong>Right to Access:</strong> Request information about data collected via cookies</li>
+                <li><strong>Right to Deletion:</strong> Request deletion of data collected through cookies</li>
+            </ul>
+
+            <h3 id="contact"><i class="fas fa-envelope"></i> Contact Information</h3>
+
+            <p>If you have any questions about our use of cookies or this Cookie Policy, please contact us:</p>
+
+            <div style="background: var(--bg-secondary); border-radius: var(--border-radius); padding: 2rem; margin: 2rem 0; text-align: center;">
+                <h4 style="color: var(--text-primary); margin-bottom: 1rem;">Cookie Questions?</h4>
+                <p><strong>Email:</strong> <a href="mailto:cookies@Slotsrating.com" style="color: var(--primary-light);">cookies@Slotsrating.com</a></p>
+                <p><strong>Privacy Team:</strong> <a href="mailto:privacy@Slotsrating.com" style="color: var(--primary-light);">privacy@Slotsrating.com</a></p>
+                <p style="margin-top: 1rem; color: var(--text-muted);">We aim to respond to all cookie-related inquiries within 7 business days.</p>
+            </div>
+
+            <div class="info-box secondary">
+                <h3><i class="fas fa-info-circle"></i> Additional Resources</h3>
+                <p>For more information about cookies and online privacy:</p>
+                <ul style="margin-top: 1rem;">
+                    <li><a href="https://www.allaboutcookies.org" target="_blank" style="color: var(--secondary);">All About Cookies</a> - Independent information about cookies</li>
+                    <li><a href="https://ico.org.uk/for-the-public/online/cookies/" target="_blank" style="color: var(--secondary);">ICO Cookie Guide</a> - UK data protection authority guidance</li>
+                    <li><a href="privacy-policy.html" style="color: var(--secondary);">Our Privacy Policy</a> - Learn about our broader privacy practices</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Slotsrating</h4>
+                    <p style="color: var(--text-secondary); margin-bottom: 1.5rem; line-height: 1.7;">Your trusted guide to the world's best online casinos. We provide expert reviews, exclusive bonuses, and responsible gaming resources.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="reviews.html">Casino Reviews</a></li>
+                        <li><a href="tips.html">Tips & Guides</a></li>
+                        <li><a href="responsible-gaming.html">Responsible Gaming</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="https://www.begambleaware.org" target="_blank">BeGambleAware</a></li>
+                        <li><a href="https://www.gamcare.org.uk" target="_blank">GamCare</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Slotsrating. All rights reserved.</p>
+                <div class="footer-disclaimer">
+                    <p><strong>Disclaimer:</strong> This website contains affiliate links. We may receive compensation when you click on links to partner sites. Gambling can be addictive. Please play responsibly and only gamble what you can afford to lose.</p>
+                    <p style="margin-top: 1rem;">
+                        <i class="fas fa-exclamation-triangle" style="color: var(--warning); margin-right: 0.5rem;"></i>
+                        <strong>18+ Only</strong> • Gambling can be addictive • Play responsibly
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>

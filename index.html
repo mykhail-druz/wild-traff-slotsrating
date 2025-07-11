@@ -1870,10 +1870,16 @@
         }
 
         .filter-controls {
-          flex-direction: column;
-          align-items: center;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.8rem;
+          justify-content: center;
         }
 
+        .filter-btn {
+          width: calc(33.33% - 0.8rem);
+          text-align: center;
+        }
 
         .cookie-content {
           flex-direction: column;

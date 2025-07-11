@@ -3,48 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Slotsrating</title>
-    <meta name="description" content="Slotsrating's privacy policy explaining how we collect, use, and protect your personal information.">
+    <title>Privacy Policy - SlotsRating</title>
+    <meta name="description" content="SlotsRating's privacy policy explaining how we collect, use, and protect your personal information.">
+    <meta name="keywords" content="privacy policy, data protection, personal information, SlotsRating">
+    <meta name="author" content="SlotsRating">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://slotsrating.com/privacy-policy">
+    <meta property="og:title" content="Privacy Policy - SlotsRating">
+    <meta property="og:description" content="Learn about how SlotsRating collects, uses, and protects your personal information.">
+    <meta property="og:image" content="https://slotsrating.com/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://slotsrating.com/privacy-policy">
+    <meta property="twitter:title" content="Privacy Policy - SlotsRating">
+    <meta property="twitter:description" content="Learn about how SlotsRating collects, uses, and protects your personal information.">
+    <meta property="twitter:image" content="https://slotsrating.com/og-image.jpg">
+
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
     <style>
         :root {
-            --primary: #6366f1;
-            --primary-light: #818cf8;
-            --primary-dark: #4f46e5;
-            --secondary: #06b6d4;
-            --accent: #f59e0b;
-            --success: #10b981;
-            --warning: #f59e0b;
-            --error: #ef4444;
-            --purple: #8b5cf6;
-            --pink: #ec4899;
-            
-            --bg-primary: #0a0a0f;
-            --bg-secondary: #0f0f17;
-            --bg-tertiary: #1a1a25;
-            --bg-card: #1e1e2e;
-            --bg-glass: rgba(255, 255, 255, 0.02);
-            --text-primary: #ffffff;
-            --text-secondary: #b4b4c8;
-            --text-muted: #6b7280;
-            
-            --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            --gradient-secondary: linear-gradient(135deg, #8b5cf6 0%, #06b6d4 100%);
-            --gradient-accent: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-            --gradient-success: linear-gradient(135deg, #10b981 0%, #059669 100%);
-            --gradient-gold: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
-            --gradient-rainbow: linear-gradient(45deg, #667eea, #764ba2, #f093fb, #f5576c, #4facfe, #00f2fe);
-            
-            --border-color: rgba(255, 255, 255, 0.08);
-            --border-accent: rgba(255, 255, 255, 0.15);
-            --shadow-glow: 0 0 40px rgba(99, 102, 241, 0.15);
-            --shadow-card: 0 25px 50px rgba(0, 0, 0, 0.5);
-            --shadow-intense: 0 35px 60px rgba(99, 102, 241, 0.3);
-            --border-radius: 20px;
-            --border-radius-lg: 24px;
+            --primary: #D4AF37;
+            --primary-dark: #B8941F;
+            --secondary: #1A1A2E;
+            --accent: #E94560;
+            --accent-light: #FF6B8A;
+            --purple: #9B59B6;
+            --teal: #1ABC9C;
+            --orange: #E67E22;
+            --success: #27AE60;
+            --warning: #F39C12;
+            --danger: #E74C3C;
+
+            --bg-primary: #0F0F23;
+            --bg-secondary: #16213E;
+            --bg-tertiary: #1A1A2E;
+            --bg-card: #1E1E3F;
+            --bg-glass: rgba(255, 255, 255, 0.05);
+            --bg-glass-strong: rgba(255, 255, 255, 0.1);
+            --bg-overlay: rgba(0, 0, 0, 0.8);
+
+            --text-primary: #FFFFFF;
+            --text-secondary: #B8B8C8;
+            --text-muted: #8892B0;
+            --text-accent: #64FFDA;
+
+            --gradient-gold: linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #FF8C00 100%);
+            --gradient-primary: linear-gradient(135deg, #D4AF37 0%, #FFD700 50%, #FFA500 100%);
+            --gradient-purple: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-pink: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --gradient-blue: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            --gradient-teal: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+            --gradient-orange: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            --gradient-dark: linear-gradient(135deg, #0F0F23 0%, #16213E 50%, #1A1A2E 100%);
+            --gradient-card: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+            --gradient-rainbow: linear-gradient(45deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3);
+
+            --shadow-soft: 0 8px 32px rgba(0, 0, 0, 0.3);
+            --shadow-medium: 0 12px 48px rgba(0, 0, 0, 0.4);
+            --shadow-strong: 0 20px 64px rgba(0, 0, 0, 0.5);
+            --shadow-glow: 0 0 40px rgba(212, 175, 55, 0.4);
+            --shadow-accent: 0 8px 32px rgba(233, 69, 96, 0.3);
+            --shadow-neon: 0 0 20px rgba(100, 255, 218, 0.5);
+
+            --border-radius: 24px;
+            --border-radius-lg: 32px;
+            --border-radius-xl: 40px;
             --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
             --blur: 20px;
+            --blur-strong: 40px;
         }
 
         * {
@@ -53,8 +94,12 @@
             box-sizing: border-box;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
-            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            font-family: 'Inter', sans-serif;
             background: var(--bg-primary);
             color: var(--text-primary);
             line-height: 1.6;
@@ -62,7 +107,7 @@
             position: relative;
         }
 
-        /* Background Effects */
+        /* Enhanced Background with Animated Mesh */
         body::before {
             content: '';
             position: fixed;
@@ -70,20 +115,166 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: 
-                radial-gradient(circle at 20% 50%, rgba(139, 92, 246, 0.15) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(236, 72, 153, 0.15) 0%, transparent 50%),
-                radial-gradient(circle at 40% 80%, rgba(6, 182, 212, 0.15) 0%, transparent 50%);
+            background:
+                    radial-gradient(circle at 20% 30%, rgba(212, 175, 55, 0.15) 0%, transparent 50%),
+                    radial-gradient(circle at 80% 20%, rgba(233, 69, 96, 0.15) 0%, transparent 50%),
+                    radial-gradient(circle at 40% 80%, rgba(155, 89, 182, 0.15) 0%, transparent 50%),
+                    radial-gradient(circle at 90% 90%, rgba(26, 188, 156, 0.15) 0%, transparent 50%),
+                    radial-gradient(circle at 10% 70%, rgba(52, 152, 219, 0.1) 0%, transparent 50%);
             z-index: -2;
-            animation: backgroundShift 20s ease-in-out infinite;
+            animation: backgroundShift 25s ease-in-out infinite;
         }
 
         @keyframes backgroundShift {
-            0%, 100% { opacity: 0.7; }
-            50% { opacity: 1; }
+            0%, 100% {
+                transform: rotate(0deg) scale(1);
+                opacity: 0.8;
+            }
+            25% {
+                transform: rotate(1deg) scale(1.05);
+                opacity: 1;
+            }
+            50% {
+                transform: rotate(0deg) scale(1.1);
+                opacity: 0.6;
+            }
+            75% {
+                transform: rotate(-1deg) scale(1.05);
+                opacity: 1;
+            }
         }
 
-        /* Header */
+        /* Enhanced Floating Shapes */
+        .floating-shapes {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .shape {
+            position: absolute;
+            opacity: 0.15;
+            animation: floatShape 20s ease-in-out infinite;
+        }
+
+        .shape-1 {
+            top: 10%;
+            left: 10%;
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-gold);
+            border-radius: 50%;
+            animation-delay: 0s;
+        }
+
+        .shape-2 {
+            top: 25%;
+            right: 15%;
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-pink);
+            transform: rotate(45deg);
+            animation-delay: 3s;
+        }
+
+        .shape-3 {
+            bottom: 35%;
+            left: 20%;
+            width: 100px;
+            height: 100px;
+            background: var(--gradient-blue);
+            border-radius: 30px;
+            animation-delay: 6s;
+        }
+
+        .shape-4 {
+            bottom: 20%;
+            right: 25%;
+            width: 70px;
+            height: 70px;
+            background: var(--gradient-teal);
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            animation-delay: 9s;
+        }
+
+        .shape-5 {
+            top: 60%;
+            left: 5%;
+            width: 50px;
+            height: 50px;
+            background: var(--gradient-purple);
+            border-radius: 15px;
+            animation-delay: 12s;
+        }
+
+        .shape-6 {
+            top: 40%;
+            right: 10%;
+            width: 90px;
+            height: 90px;
+            background: var(--gradient-orange);
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            animation-delay: 15s;
+        }
+
+        @keyframes floatShape {
+            0%, 100% {
+                transform: translateY(0px) rotate(0deg) scale(1);
+            }
+            25% {
+                transform: translateY(-30px) rotate(90deg) scale(1.1);
+            }
+            50% {
+                transform: translateY(-60px) rotate(180deg) scale(0.9);
+            }
+            75% {
+                transform: translateY(-30px) rotate(270deg) scale(1.1);
+            }
+        }
+
+        /* Scroll Progress Bar */
+        .scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 4px;
+            background: var(--gradient-primary);
+            z-index: 10000;
+            transition: width 0.3s ease;
+        }
+
+        /* Casino Footer - Responsible Gaming Message */
+        .casino-footer {
+            background: rgba(10, 10, 25, 0.9);
+            padding: 0.5rem 0;
+            text-align: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.85rem;
+        }
+
+        .casino-footer p {
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        .casino-footer a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: var(--transition);
+            font-weight: 500;
+        }
+
+        .casino-footer a:hover {
+            color: var(--accent);
+            text-decoration: underline;
+        }
+
+        /* Enhanced Header with Mobile Navigation */
         .header {
             position: fixed;
             top: 0;
@@ -91,16 +282,17 @@
             right: 0;
             z-index: 1000;
             padding: 1rem 0;
-            background: rgba(10, 10, 15, 0.8);
+            background: rgba(15, 15, 35, 0.8);
             backdrop-filter: blur(var(--blur));
-            border-bottom: 1px solid var(--border-color);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             transition: var(--transition);
         }
 
         .header.scrolled {
-            padding: 0.5rem 0;
-            background: rgba(10, 10, 15, 0.95);
-            box-shadow: var(--shadow-glow);
+            padding: 0.8rem 0;
+            background: rgba(15, 15, 35, 0.95);
+            box-shadow: var(--shadow-soft);
+            border-bottom: 1px solid var(--primary);
         }
 
         .nav {
@@ -113,61 +305,155 @@
         }
 
         .logo {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 2rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
             font-weight: 800;
-            background: var(--gradient-rainbow);
-            background-size: 200% 200%;
+            background: var(--gradient-gold);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             text-decoration: none;
-            animation: gradientShift 3s ease-in-out infinite;
+            position: relative;
+            letter-spacing: -0.5px;
+            z-index: 1001;
         }
 
-        @keyframes gradientShift {
-            0%, 100% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
+        .logo::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--gradient-primary);
+            border-radius: 2px;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover::after {
+            transform: scaleX(1);
         }
 
         .nav-menu {
             display: flex;
             list-style: none;
             gap: 2.5rem;
+            align-items: center;
         }
 
         .nav-link {
             color: var(--text-secondary);
             text-decoration: none;
             font-weight: 500;
-            font-size: 1.1rem;
+            font-size: 1rem;
             position: relative;
             transition: var(--transition);
-            padding: 0.5rem 0;
+            padding: 0.8rem 1.2rem;
+            border-radius: 12px;
         }
 
         .nav-link::before {
             content: '';
             position: absolute;
-            bottom: 0;
-            left: 0;
+            bottom: -8px;
+            left: 50%;
             width: 0;
-            height: 2px;
+            height: 3px;
             background: var(--gradient-primary);
-            transition: width 0.3s ease;
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+            border-radius: 2px;
         }
 
-        .nav-link:hover {
+        .nav-link:hover,
+        .nav-link.active {
             color: var(--text-primary);
+            background: var(--bg-glass);
             transform: translateY(-2px);
         }
 
         .nav-link:hover::before,
         .nav-link.active::before {
-            width: 100%;
+            width: 80%;
         }
 
-        .nav-link.active {
-            color: var(--primary-light);
+        /* Mobile Menu Toggle */
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 0.5rem;
+            z-index: 1001;
+        }
+
+        .mobile-menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: var(--primary);
+            margin: 3px 0;
+            transition: var(--transition);
+            border-radius: 2px;
+        }
+
+        .mobile-menu-toggle.active span:nth-child(1) {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+
+        .mobile-menu-toggle.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .mobile-menu-toggle.active span:nth-child(3) {
+            transform: rotate(45deg) translate(-5px, -6px);
+        }
+
+        /* Mobile Menu Overlay */
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: rgba(15, 15, 35, 0.98);
+            backdrop-filter: blur(var(--blur-strong));
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+        }
+
+        .mobile-menu.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .mobile-menu-items {
+            list-style: none;
+            text-align: center;
+        }
+
+        .mobile-menu-items li {
+            margin: 2rem 0;
+        }
+
+        .mobile-menu-items a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: 600;
+            transition: var(--transition);
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            display: block;
+        }
+
+        .mobile-menu-items a:hover {
+            color: var(--primary);
+            background: var(--bg-glass);
         }
 
         /* Hero Section */
@@ -184,14 +470,14 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: 
-                radial-gradient(circle at 30% 40%, rgba(99, 102, 241, 0.2) 0%, transparent 50%),
-                radial-gradient(circle at 70% 60%, rgba(139, 92, 246, 0.2) 0%, transparent 50%);
+            background:
+                    radial-gradient(circle at 30% 40%, rgba(212, 175, 55, 0.2) 0%, transparent 50%),
+                    radial-gradient(circle at 70% 60%, rgba(233, 69, 96, 0.2) 0%, transparent 50%);
             z-index: -1;
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
             padding: 0 2rem;
         }
@@ -208,18 +494,18 @@
             gap: 0.5rem;
             background: var(--bg-glass);
             backdrop-filter: blur(10px);
-            border: 1px solid var(--border-accent);
+            border: 1px solid rgba(212, 175, 55, 0.3);
             padding: 0.75rem 1.5rem;
             border-radius: 50px;
             margin-bottom: 2rem;
             font-size: 0.9rem;
             font-weight: 600;
-            color: var(--primary-light);
+            color: var(--primary);
             box-shadow: var(--shadow-glow);
         }
 
         .hero h1 {
-            font-family: 'Orbitron', sans-serif;
+            font-family: 'Playfair Display', serif;
             font-size: clamp(2.5rem, 5vw, 4rem);
             font-weight: 900;
             line-height: 1.1;
@@ -240,7 +526,7 @@
         .last-updated {
             background: var(--bg-glass);
             backdrop-filter: blur(var(--blur));
-            border: 1px solid var(--border-color);
+            border: 1px solid rgba(212, 175, 55, 0.3);
             border-radius: var(--border-radius);
             padding: 1.5rem;
             margin-bottom: 3rem;
@@ -250,7 +536,7 @@
 
         .last-updated .date {
             font-weight: 700;
-            color: var(--primary-light);
+            color: var(--primary);
             font-size: 1.1rem;
         }
 
@@ -258,7 +544,7 @@
         .content-card {
             background: var(--bg-glass);
             backdrop-filter: blur(var(--blur));
-            border: 1px solid var(--border-color);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: var(--border-radius-lg);
             padding: 3rem;
             margin-bottom: 3rem;
@@ -277,7 +563,7 @@
         }
 
         .content-card h2 {
-            font-family: 'Orbitron', sans-serif;
+            font-family: 'Playfair Display', serif;
             font-size: 2rem;
             font-weight: 700;
             margin-bottom: 2rem;
@@ -286,9 +572,9 @@
         }
 
         .content-card h3 {
-            font-family: 'Orbitron', sans-serif;
+            font-family: 'Playfair Display', serif;
             font-size: 1.4rem;
-            color: var(--primary-light);
+            color: var(--primary);
             margin: 2.5rem 0 1.5rem 0;
             display: flex;
             align-items: center;
@@ -328,7 +614,7 @@
             content: '▶';
             position: absolute;
             left: 0;
-            color: var(--primary-light);
+            color: var(--primary);
             font-size: 0.8rem;
         }
 
@@ -357,7 +643,7 @@
         }
 
         .highlight-box h3 {
-            color: var(--primary-light);
+            color: var(--primary);
             margin-bottom: 1.5rem;
             font-size: 1.4rem;
             display: flex;
@@ -376,7 +662,7 @@
             border-radius: var(--border-radius-lg);
             padding: 3rem;
             margin: 3rem 0;
-            border: 1px solid var(--border-color);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             position: relative;
         }
 
@@ -389,11 +675,11 @@
         }
 
         .info-box.secondary {
-            border-left: 4px solid var(--secondary);
+            border-left: 4px solid var(--teal);
         }
 
         .info-box h3 {
-            font-family: 'Orbitron', sans-serif;
+            font-family: 'Playfair Display', serif;
             margin-bottom: 1.5rem;
             font-size: 1.4rem;
             display: flex;
@@ -410,7 +696,7 @@
         }
 
         .info-box.secondary h3 {
-            color: var(--secondary);
+            color: var(--teal);
         }
 
         .info-box p {
@@ -424,11 +710,11 @@
             border-radius: var(--border-radius);
             padding: 2.5rem;
             margin-bottom: 3rem;
-            border: 1px solid var(--border-color);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .table-of-contents h3 {
-            font-family: 'Orbitron', sans-serif;
+            font-family: 'Playfair Display', serif;
             color: var(--text-primary);
             margin-bottom: 1.5rem;
             font-size: 1.3rem;
@@ -458,44 +744,16 @@
         }
 
         .toc-list a:hover {
-            color: var(--primary-light);
+            color: var(--primary);
             background: var(--bg-glass);
             transform: translateX(5px);
         }
 
-        /* Contact Section */
-        .contact-section {
-            background: var(--bg-secondary);
-            border-radius: var(--border-radius-lg);
-            padding: 3rem;
-            margin: 3rem 0;
-            border: 1px solid var(--border-color);
-            text-align: center;
-        }
-
-        .contact-section h3 {
-            font-family: 'Orbitron', sans-serif;
-            color: var(--text-primary);
-            margin-bottom: 1.5rem;
-            font-size: 1.6rem;
-        }
-
-        .contact-section a {
-            color: var(--primary-light);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1rem;
-        }
-
-        .contact-section a:hover {
-            text-decoration: underline;
-        }
-
-        /* Footer */
+        /* Enhanced Footer */
         .footer {
             background: var(--bg-primary);
-            padding: 4rem 0 2rem;
-            border-top: 1px solid var(--border-color);
+            padding: 8rem 0 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
             position: relative;
         }
 
@@ -505,22 +763,22 @@
             top: 0;
             left: 0;
             right: 0;
-            height: 1px;
+            height: 4px;
             background: var(--gradient-primary);
         }
 
         .footer-content {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 3rem;
-            margin-bottom: 3rem;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 4rem;
+            margin-bottom: 4rem;
         }
 
-        .footer-section h4 {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 1.2rem;
+        .footer-section h5 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
             font-weight: 700;
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
             color: var(--text-primary);
         }
 
@@ -529,32 +787,31 @@
         }
 
         .footer-links li {
-            margin-bottom: 0.75rem;
+            margin-bottom: 1rem;
         }
 
         .footer-links a {
             color: var(--text-secondary);
             text-decoration: none;
             transition: var(--transition);
-            position: relative;
+            font-size: 1rem;
         }
 
         .footer-links a:hover {
-            color: var(--primary-light);
+            color: var(--primary);
             transform: translateX(5px);
         }
 
-        .social-links {
+        .footer-social {
             display: flex;
             gap: 1rem;
-            margin-top: 1rem;
+            margin-top: 2rem;
         }
 
         .social-link {
             width: 50px;
             height: 50px;
             background: var(--bg-glass);
-            border: 1px solid var(--border-color);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -562,29 +819,20 @@
             color: var(--text-secondary);
             font-size: 1.2rem;
             transition: var(--transition);
-            text-decoration: none;
         }
 
         .social-link:hover {
-            background: var(--gradient-primary);
-            color: white;
+            background: var(--primary);
+            color: var(--bg-primary);
             transform: translateY(-3px);
         }
 
         .footer-bottom {
             text-align: center;
-            padding-top: 2rem;
-            border-top: 1px solid var(--border-color);
+            padding-top: 3rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
             color: var(--text-muted);
-            font-size: 0.9rem;
-        }
-
-        .footer-disclaimer {
-            background: var(--bg-secondary);
-            padding: 2rem;
-            border-radius: var(--border-radius);
-            margin-top: 2rem;
-            border: 1px solid var(--border-color);
+            font-size: 1rem;
         }
 
         /* Responsive Design */
@@ -592,48 +840,70 @@
             .nav-menu {
                 display: none;
             }
-            
+
+            .mobile-menu-toggle {
+                display: flex;
+            }
+
             .hero {
                 padding: 6rem 0 3rem;
             }
-            
-            .container {
-                padding: 0 1rem;
+
+            .hero h1 {
+                font-size: 2.5rem;
             }
 
             .content-card {
                 padding: 2rem;
             }
 
-            .table-of-contents {
-                padding: 2rem;
-            }
-
-            .contact-section {
-                padding: 2rem;
+            .container {
+                padding: 0 1rem;
             }
         }
 
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
             }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
 
-        .content-card {
-            animation: fadeInUp 0.6s ease-out;
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .content-card {
+                padding: 1.5rem;
+            }
+
+            .content-card h2 {
+                font-size: 1.5rem;
+            }
+
+            .content-card h3 {
+                font-size: 1.2rem;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header class="header" id="header">
+<!-- Floating Shapes -->
+<div class="floating-shapes">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+    <div class="shape shape-4"></div>
+    <div class="shape shape-5"></div>
+    <div class="shape shape-6"></div>
+</div>
+
+<!-- Scroll Progress Bar -->
+<div class="scroll-progress"></div>
+
+<!-- Header -->
+<header class="header" id="header">
+        <div class="casino-footer">
+                        <p>18+ • Gambling can be addictive • <a href="https://www.begambleaware.org" target="_blank">BeGambleAware</a> • <a href="https://www.gamcare.org.uk" target="_blank">GamCare</a></p>
+                    </div>
         <nav class="nav">
             <a href="index.html" class="logo">Slotsrating</a>
             <ul class="nav-menu">
@@ -643,374 +913,476 @@
                 <li><a href="responsible-gaming.html" class="nav-link">Responsible Gaming</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
             </ul>
+            <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-background"></div>
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-badge">
-                    <i class="fas fa-shield-alt"></i>
-                    <span>Privacy & Data Protection</span>
-                </div>
-                <h1>Privacy Policy</h1>
-                <p>Slotsrating is committed to protecting your privacy and ensuring the security of your personal information. This policy explains how we collect, use, and safeguard your data.</p>
-            </div>
-        </div>
-    </section>
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-menu-items">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="tips.html">Tips</a></li>
+        <li><a href="responsible-gaming.html">Responsible Gaming</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+</div>
 
-    <!-- Last Updated Banner -->
-    <section class="container">
-        <div class="last-updated">
-            <p><strong>Last Updated:</strong> <span class="date">January 15, 2025</span></p>
-            <p>We may update this policy from time to time. Any changes will be posted on this page with an updated date.</p>
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-background"></div>
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-shield-alt"></i>
+                Privacy Policy
+            </div>
+            <h1>Your Privacy Matters</h1>
+            <p>Learn about how SlotsRating collects, uses, and protects your personal information while providing you with the best casino reviews and gaming insights.</p>
         </div>
-    </section>
+    </div>
+</section>
+
+<!-- Main Content -->
+<main class="container">
+    <!-- Last Updated Banner -->
+    <div class="last-updated">
+        <p>Last Updated: <span class="date">January 15, 2025</span></p>
+    </div>
 
     <!-- Table of Contents -->
-    <section class="container">
-        <div class="table-of-contents">
-            <h3><i class="fas fa-list"></i> Table of Contents</h3>
-            <ol class="toc-list">
-                <li><a href="#information-collection"><i class="fas fa-angle-right"></i> Information We Collect</a></li>
-                <li><a href="#information-use"><i class="fas fa-angle-right"></i> How We Use Your Information</a></li>
-                <li><a href="#information-sharing"><i class="fas fa-angle-right"></i> Information Sharing</a></li>
-                <li><a href="#data-security"><i class="fas fa-angle-right"></i> Data Security</a></li>
-                <li><a href="#cookies"><i class="fas fa-angle-right"></i> Cookies and Tracking</a></li>
-                <li><a href="#third-party"><i class="fas fa-angle-right"></i> Third-Party Services</a></li>
-                <li><a href="#your-rights"><i class="fas fa-angle-right"></i> Your Rights</a></li>
-                <li><a href="#children"><i class="fas fa-angle-right"></i> Children's Privacy</a></li>
-                <li><a href="#updates"><i class="fas fa-angle-right"></i> Policy Updates</a></li>
-                <li><a href="#contact"><i class="fas fa-angle-right"></i> Contact Information</a></li>
-            </ol>
+    <div class="table-of-contents">
+        <h3><i class="fas fa-list"></i> Table of Contents</h3>
+        <ul class="toc-list">
+            <li><a href="#overview"><i class="fas fa-chevron-right"></i> Overview</a></li>
+            <li><a href="#information-collection"><i class="fas fa-chevron-right"></i> Information We Collect</a></li>
+            <li><a href="#information-use"><i class="fas fa-chevron-right"></i> How We Use Your Information</a></li>
+            <li><a href="#information-sharing"><i class="fas fa-chevron-right"></i> Information Sharing</a></li>
+            <li><a href="#cookies"><i class="fas fa-chevron-right"></i> Cookies and Tracking</a></li>
+            <li><a href="#data-security"><i class="fas fa-chevron-right"></i> Data Security</a></li>
+            <li><a href="#your-rights"><i class="fas fa-chevron-right"></i> Your Rights</a></li>
+            <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact Information</a></li>
+        </ul>
+    </div>
+
+    <!-- Overview -->
+    <div id="overview" class="content-card">
+        <h2>Overview</h2>
+        <p>At SlotsRating, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our services.</p>
+
+        <div class="info-box secondary">
+            <h3><i class="fas fa-info-circle"></i> Important Notice</h3>
+            <p>By accessing and using SlotsRating, you agree to the collection and use of information in accordance with this Privacy Policy. If you do not agree with our policies and practices, please do not use our services.</p>
         </div>
-    </section>
+    </div>
 
-    <!-- Privacy Policy Content -->
-    <section class="container">
-        <div class="content-card">
-            <h2>Our Commitment to Privacy</h2>
-            <p>At Slotsrating, we understand that your privacy is important. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website at Slotsrating.com (the "Site"). Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the site.</p>
-            
-            <div class="info-box success">
-                <h3><i class="fas fa-shield-alt"></i> Your Privacy Matters</h3>
-                <p>We are committed to transparency about our data practices and giving you control over your personal information. We only collect information that helps us provide you with better content and services.</p>
-            </div>
+    <!-- Information Collection -->
+    <div id="information-collection" class="content-card">
+        <h2>Information We Collect</h2>
 
-            <h3 id="information-collection"><i class="fas fa-database"></i> Information We Collect</h3>
-            
-            <h4>Personal Information</h4>
-            <p>We may collect the following types of personal information:</p>
-            <ul>
-                <li><strong>Contact Information:</strong> Email address, name (if provided voluntarily)</li>
-                <li><strong>Communication Data:</strong> Messages you send us through contact forms or email</li>
-                <li><strong>Account Information:</strong> If you create an account, username and password</li>
-                <li><strong>Preference Data:</strong> Your gaming preferences and interests based on site usage</li>
-            </ul>
+        <h3><i class="fas fa-user"></i> Personal Information</h3>
+        <p>We may collect the following types of personal information:</p>
+        <ul>
+            <li><strong>Contact Information:</strong> Name, email address, phone number</li>
+            <li><strong>Account Information:</strong> Username, password, preferences</li>
+            <li><strong>Communication Data:</strong> Messages, reviews, comments</li>
+            <li><strong>Payment Information:</strong> Billing address, payment method details</li>
+        </ul>
 
-            <h4>Automatically Collected Information</h4>
-            <p>When you visit our website, we automatically collect certain information:</p>
-            <ul>
-                <li><strong>Device Information:</strong> IP address, browser type, operating system</li>
-                <li><strong>Usage Data:</strong> Pages visited, time spent on site, click patterns</li>
-                <li><strong>Location Data:</strong> General geographic location based on IP address</li>
-                <li><strong>Referral Information:</strong> The website that referred you to our site</li>
-            </ul>
+        <h3><i class="fas fa-chart-line"></i> Usage Information</h3>
+        <p>We automatically collect information about your interaction with our website:</p>
+        <ul>
+            <li><strong>Technical Data:</strong> IP address, browser type, device information</li>
+            <li><strong>Usage Data:</strong> Pages visited, time spent, click patterns</li>
+            <li><strong>Location Data:</strong> General geographic location</li>
+            <li><strong>Referral Data:</strong> Source of website visits</li>
+        </ul>
 
-            <h3 id="information-use"><i class="fas fa-cogs"></i> How We Use Your Information</h3>
-            
-            <p>We use the information we collect for various purposes, including:</p>
-            <ul>
-                <li><strong>Providing Services:</strong> To operate and maintain our website</li>
-                <li><strong>Content Improvement:</strong> To improve our casino reviews and recommendations</li>
-                <li><strong>Communication:</strong> To respond to your inquiries and provide customer support</li>
-                <li><strong>Analytics:</strong> To understand how users interact with our site</li>
-                <li><strong>Marketing:</strong> To send you relevant information about casino offers (with consent)</li>
-                <li><strong>Legal Compliance:</strong> To comply with applicable laws and regulations</li>
-            </ul>
-
-            <div class="highlight-box">
-                <h3><i class="fas fa-info-circle"></i> Legal Basis for Processing</h3>
-                <p>We process your personal information based on legitimate interests in providing and improving our services, your consent where required, and compliance with legal obligations.</p>
-            </div>
-
-            <h3 id="information-sharing"><i class="fas fa-share-alt"></i> Information Sharing</h3>
-            
-            <p>We do not sell, trade, or otherwise transfer your personal information to third parties without your consent, except in the following circumstances:</p>
-            
-            <h4>Affiliate Partners</h4>
-            <p>We may share anonymized data with casino partners to help them improve their services. This data cannot be used to identify you personally.</p>
-            
-            <h4>Service Providers</h4>
-            <p>We may share information with trusted third-party service providers who assist us in:</p>
-            <ul>
-                <li>Website hosting and maintenance</li>
-                <li>Analytics and performance monitoring</li>
-                <li>Email communication services</li>
-                <li>Customer support systems</li>
-            </ul>
-
-            <h4>Legal Requirements</h4>
-            <p>We may disclose your information if required by law or in response to:</p>
-            <ul>
-                <li>Court orders or legal proceedings</li>
-                <li>Government or regulatory requests</li>
-                <li>Protection of our rights and safety</li>
-                <li>Prevention of fraud or illegal activity</li>
-            </ul>
-
-            <h3 id="data-security"><i class="fas fa-lock"></i> Data Security</h3>
-            
-            <p>We implement appropriate technical and organizational measures to protect your personal information:</p>
-            <ul>
-                <li><strong>Encryption:</strong> All data transmission is protected using SSL/TLS encryption</li>
-                <li><strong>Access Controls:</strong> Limited access to personal data on a need-to-know basis</li>
-                <li><strong>Regular Updates:</strong> We keep our security systems and software up to date</li>
-                <li><strong>Monitoring:</strong> Continuous monitoring for security threats and vulnerabilities</li>
-                <li><strong>Data Backup:</strong> Regular secure backups to prevent data loss</li>
-            </ul>
-
-            <div class="info-box warning">
-                <h3><i class="fas fa-exclamation-triangle"></i> Security Limitations</h3>
-                <p>While we strive to protect your personal information, no method of transmission over the Internet or electronic storage is 100% secure. We cannot guarantee absolute security.</p>
-            </div>
-
-            <h3 id="cookies"><i class="fas fa-cookie-bite"></i> Cookies and Tracking Technologies</h3>
-            
-            <p>We use cookies and similar tracking technologies to enhance your browsing experience. For detailed information about our cookie usage, please see our <a href="cookie-policy.html" style="color: var(--primary-light);">Cookie Policy</a>.</p>
-
-            <h4>Types of Cookies We Use</h4>
-            <ul>
-                <li><strong>Essential Cookies:</strong> Required for basic site functionality</li>
-                <li><strong>Analytics Cookies:</strong> Help us understand site usage and performance</li>
-                <li><strong>Preference Cookies:</strong> Remember your settings and preferences</li>
-                <li><strong>Marketing Cookies:</strong> Used for advertising and affiliate tracking</li>
-            </ul>
-
-            <h3 id="third-party"><i class="fas fa-external-link-alt"></i> Third-Party Services</h3>
-            
-            <p>Our website may contain links to third-party websites, including online casinos. We are not responsible for the privacy practices of these external sites. We encourage you to read their privacy policies before providing any personal information.</p>
-
-            <h4>Third-Party Services We Use</h4>
-            <ul>
-                <li><strong>Google Analytics:</strong> For website traffic analysis</li>
-                <li><strong>Affiliate Networks:</strong> For tracking casino referrals</li>
-                <li><strong>Social Media Platforms:</strong> For sharing and engagement features</li>
-                <li><strong>Email Services:</strong> For newsletter and communication delivery</li>
-            </ul>
-            <h3 id="your-rights"><i class="fas fa-user-shield"></i> Your Rights and Choices</h3>
-            
-            <p>You have several rights regarding your personal information:</p>
-
-            <h4>Access and Portability</h4>
-            <ul>
-                <li><strong>Right to Access:</strong> Request a copy of the personal information we hold about you</li>
-                <li><strong>Data Portability:</strong> Receive your data in a structured, machine-readable format</li>
-                <li><strong>Information Request:</strong> Ask about how your data is processed and shared</li>
-            </ul>
-
-            <h4>Correction and Deletion</h4>
-            <ul>
-                <li><strong>Right to Rectification:</strong> Correct any inaccurate or incomplete information</li>
-                <li><strong>Right to Erasure:</strong> Request deletion of your personal information</li>
-                <li><strong>Right to Restriction:</strong> Limit how we process your data</li>
-            </ul>
-
-            <h4>Consent and Objection</h4>
-            <ul>
-                <li><strong>Withdraw Consent:</strong> Opt out of marketing communications at any time</li>
-                <li><strong>Object to Processing:</strong> Object to data processing based on legitimate interests</li>
-                <li><strong>Cookie Control:</strong> Manage cookie preferences through your browser settings</li>
-            </ul>
-
-            <div class="info-box secondary">
-                <h3><i class="fas fa-envelope"></i> Exercising Your Rights</h3>
-                <p>To exercise any of these rights, please contact us at <a href="mailto:privacy@Slotsrating.com" style="color: var(--secondary);">privacy@Slotsrating.com</a>. We will respond to your request within 30 days.</p>
-            </div>
-
-            <h3 id="children"><i class="fas fa-child"></i> Children's Privacy</h3>
-            
-            <p>Our website is not intended for individuals under the age of 18. We do not knowingly collect personal information from children under 18 years of age.</p>
-
-            <h4>Age Verification</h4>
-            <p>If we become aware that we have collected personal information from a child under 18, we will:</p>
-            <ul>
-                <li>Delete the information immediately</li>
-                <li>Not use the information for any purpose</li>
-                <li>Not disclose the information to third parties</li>
-                <li>Notify parents or guardians if contact information is available</li>
-            </ul>
-
-            <div class="highlight-box">
-                <h3><i class="fas fa-exclamation-triangle"></i> Parental Notice</h3>
-                <p>If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately at <a href="mailto:privacy@Slotsrating.com" style="color: var(--primary-light);">privacy@Slotsrating.com</a>.</p>
-            </div>
-
-            <h3 id="international"><i class="fas fa-globe"></i> International Data Transfers</h3>
-            
-            <p>Your information may be transferred to and processed in countries other than your country of residence. We ensure appropriate safeguards are in place:</p>
-            <ul>
-                <li><strong>Adequacy Decisions:</strong> Transfers to countries with adequate data protection</li>
-                <li><strong>Standard Contractual Clauses:</strong> EU-approved contracts for data protection</li>
-                <li><strong>Certification Schemes:</strong> Partners certified under recognized privacy frameworks</li>
-                <li><strong>Binding Corporate Rules:</strong> Internal policies ensuring consistent protection</li>
-            </ul>
-
-            <h3 id="retention"><i class="fas fa-calendar-alt"></i> Data Retention</h3>
-            
-            <p>We retain your personal information only as long as necessary for the purposes outlined in this policy:</p>
-
-            <h4>Retention Periods</h4>
-            <ul>
-                <li><strong>Contact Information:</strong> Until you request deletion or unsubscribe</li>
-                <li><strong>Usage Data:</strong> Typically 2-3 years for analytics purposes</li>
-                <li><strong>Communication Records:</strong> 3 years for customer service quality</li>
-                <li><strong>Legal Compliance:</strong> As required by applicable laws and regulations</li>
-            </ul>
-
-            <h4>Deletion Process</h4>
-            <p>When information is no longer needed, we securely delete or anonymize it using industry-standard methods.</p>
-
-            <h3 id="updates"><i class="fas fa-sync-alt"></i> Policy Updates</h3>
-            
-            <p>We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements.</p>
-
-            <h4>Notification of Changes</h4>
-            <p>When we make significant changes, we will:</p>
-            <ul>
-                <li>Post the updated policy on our website</li>
-                <li>Update the "Last Modified" date</li>
-                <li>Notify users via email for material changes</li>
-                <li>Provide a summary of key changes</li>
-            </ul>
-
-            <div class="info-box success">
-                <h3><i class="fas fa-bell"></i> Stay Informed</h3>
-                <p>We encourage you to periodically review this Privacy Policy to stay informed about how we protect your information. Your continued use of our services after any changes indicates acceptance of the updated policy.</p>
-            </div>
-
-            <h3 id="gdpr"><i class="fas fa-flag"></i> GDPR Compliance</h3>
-            
-            <p>If you are a resident of the European Economic Area (EEA), you have additional rights under the General Data Protection Regulation (GDPR):</p>
-
-            <h4>GDPR Rights</h4>
-            <ul>
-                <li><strong>Lawful Basis:</strong> We process data based on legitimate interests, consent, or legal obligations</li>
-                <li><strong>Data Protection Officer:</strong> Contact our DPO at <a href="mailto:dpo@Slotsrating.com" style="color: var(--primary-light);">dpo@Slotsrating.com</a></li>
-                <li><strong>Supervisory Authority:</strong> Right to lodge complaints with your local data protection authority</li>
-                <li><strong>Automated Decision-Making:</strong> We do not use automated decision-making or profiling</li>
-            </ul>
-
-            <h3 id="california"><i class="fas fa-map-marker-alt"></i> California Privacy Rights</h3>
-            
-            <p>If you are a California resident, you may have additional rights under the California Consumer Privacy Act (CCPA):</p>
-
-            <h4>CCPA Rights</h4>
-            <ul>
-                <li><strong>Right to Know:</strong> Information about data collection and use</li>
-                <li><strong>Right to Delete:</strong> Request deletion of personal information</li>
-                <li><strong>Right to Opt-Out:</strong> Opt out of the sale of personal information</li>
-                <li><strong>Non-Discrimination:</strong> Equal service regardless of privacy choices</li>
-            </ul>
-
-            <p><strong>Note:</strong> We do not sell personal information to third parties.</p>
-
-            <h3 id="contact"><i class="fas fa-envelope"></i> Contact Information</h3>
-            
-            <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
-
-            <div class="contact-section">
-                <h3>Privacy Contact Details</h3>
-                <p><strong>Email:</strong> <a href="mailto:privacy@Slotsrating.com">privacy@Slotsrating.com</a></p>
-                <p><strong>Data Protection Officer:</strong> <a href="mailto:dpo@Slotsrating.com">dpo@Slotsrating.com</a></p>
-                <p><strong>Mailing Address:</strong><br>
-                Elite Gaming Media Ltd<br>
-                Privacy Department<br>
-                456 Gaming Boulevard<br>
-                London, EC2A 2BB<br>
-                United Kingdom</p>
-                <p><strong>Response Time:</strong> We aim to respond to all privacy inquiries within 30 days.</p>
-            </div>
-
-            <div class="info-box warning">
-                <h3><i class="fas fa-clock"></i> Important Notes</h3>
-                <p><strong>Effective Date:</strong> This Privacy Policy is effective as of January 15, 2025.</p>
-                <p><strong>Language:</strong> This policy is available in English. In case of conflicts between translations, the English version prevails.</p>
-                <p><strong>Governing Law:</strong> This policy is governed by the laws of the United Kingdom.</p>
-            </div>
+        <div class="highlight-box">
+            <h3><i class="fas fa-lock"></i> Data Minimization</h3>
+            <p>We only collect information that is necessary for providing our services and improving your experience. We do not collect sensitive personal information unless explicitly required and consented to.</p>
         </div>
-    </section>
+    </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Slotsrating</h4>
-                    <p style="color: var(--text-secondary); margin-bottom: 1.5rem; line-height: 1.7;">Your trusted guide to the world's best online casinos. We provide expert reviews, exclusive bonuses, and responsible gaming resources.</p>
-                    <div class="social-links">
-                        <a href="#" class="social-link">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
-                </div>
+    <!-- Information Use -->
+    <div id="information-use" class="content-card">
+        <h2>How We Use Your Information</h2>
 
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="reviews.html">Casino Reviews</a></li>
-                        <li><a href="tips.html">Tips & Guides</a></li>
-                        <li><a href="responsible-gaming.html">Responsible Gaming</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                    </ul>
-                </div>
+        <h3><i class="fas fa-cogs"></i> Service Provision</h3>
+        <ul>
+            <li>Provide and maintain our casino review services</li>
+            <li>Process user registrations and account management</li>
+            <li>Respond to customer support inquiries</li>
+            <li>Send important service notifications</li>
+        </ul>
 
-                <div class="footer-section">
-                    <h4>Support</h4>
-                    <ul class="footer-links">
-                        <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="https://www.begambleaware.org" target="_blank">BeGambleAware</a></li>
-                        <li><a href="https://www.gamcare.org.uk" target="_blank">GamCare</a></li>
-                    </ul>
-                </div>
+        <h3><i class="fas fa-chart-bar"></i> Service Improvement</h3>
+        <ul>
+            <li>Analyze website usage patterns and trends</li>
+            <li>Improve website functionality and user experience</li>
+            <li>Develop new features and services</li>
+            <li>Conduct research and analytics</li>
+        </ul>
 
-                <div class="footer-section">
-                    <h4>Legal</h4>
-                    <ul class="footer-links">
-                        <li><a href="terms.html">Terms & Conditions</a></li>
-                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                        <li><a href="cookie-policy.html">Cookie Policy</a></li>
-                        <li><a href="disclaimer.html">Disclaimer</a></li>
-                    </ul>
+        <h3><i class="fas fa-bullhorn"></i> Marketing and Communication</h3>
+        <ul>
+            <li>Send newsletters and promotional materials (with consent)</li>
+            <li>Provide personalized content recommendations</li>
+            <li>Conduct surveys and market research</li>
+            <li>Affiliate program management</li>
+        </ul>
+
+        <div class="info-box success">
+            <h3><i class="fas fa-check-circle"></i> Consent Management</h3>
+            <p>We always obtain your explicit consent before using your information for marketing purposes. You can withdraw your consent at any time through your account settings or by contacting us.</p>
+        </div>
+    </div>
+
+    <!-- Information Sharing -->
+    <div id="information-sharing" class="content-card">
+        <h2>Information Sharing</h2>
+
+        <h3><i class="fas fa-handshake"></i> Third-Party Service Providers</h3>
+        <p>We may share your information with trusted third parties who help us operate our business:</p>
+        <ul>
+            <li><strong>Analytics Providers:</strong> Google Analytics, similar services</li>
+            <li><strong>Email Services:</strong> Newsletter and communication platforms</li>
+            <li><strong>Payment Processors:</strong> Secure payment handling</li>
+            <li><strong>Technical Services:</strong> Hosting, security, maintenance</li>
+        </ul>
+
+        <h3><i class="fas fa-gavel"></i> Legal Requirements</h3>
+        <p>We may disclose your information when required by law or to:</p>
+        <ul>
+            <li>Comply with legal obligations and court orders</li>
+            <li>Protect our rights and property</li>
+            <li>Prevent fraud and abuse</li>
+            <li>Ensure user safety and security</li>
+        </ul>
+
+        <div class="info-box warning">
+            <h3><i class="fas fa-exclamation-triangle"></i> No Data Sales</h3>
+            <p>We do not sell, trade, or rent your personal information to third parties for their marketing purposes. Any data sharing is limited to the purposes outlined in this policy.</p>
+        </div>
+    </div>
+
+    <!-- Cookies -->
+    <div id="cookies" class="content-card">
+        <h2>Cookies and Tracking Technologies</h2>
+
+        <h3><i class="fas fa-cookie-bite"></i> What Are Cookies</h3>
+        <p>Cookies are small text files stored on your device that help us provide and improve our services. We use both session cookies (temporary) and persistent cookies (stored longer-term).</p>
+
+        <h3><i class="fas fa-list-alt"></i> Types of Cookies We Use</h3>
+        <ul>
+            <li><strong>Essential Cookies:</strong> Required for basic website functionality</li>
+            <li><strong>Analytics Cookies:</strong> Help us understand website usage</li>
+            <li><strong>Preference Cookies:</strong> Remember your settings and preferences</li>
+            <li><strong>Marketing Cookies:</strong> Deliver relevant advertisements</li>
+        </ul>
+
+        <h3><i class="fas fa-sliders-h"></i> Cookie Management</h3>
+        <p>You can control cookies through:</p>
+        <ul>
+            <li>Your browser settings to block or delete cookies</li>
+            <li>Our cookie consent banner on first visit</li>
+            <li>Cookie preference center (link in footer)</li>
+            <li>Opt-out links for third-party services</li>
+        </ul>
+
+        <div class="highlight-box">
+            <h3><i class="fas fa-info-circle"></i> Cookie Notice</h3>
+            <p>Some cookies are essential for website functionality. Disabling these may affect your ability to use certain features of our website.</p>
+        </div>
+    </div>
+
+    <!-- Data Security -->
+    <div id="data-security" class="content-card">
+        <h2>Data Security</h2>
+
+        <h3><i class="fas fa-shield-alt"></i> Security Measures</h3>
+        <p>We implement comprehensive security measures to protect your personal information:</p>
+        <ul>
+            <li><strong>Encryption:</strong> SSL/TLS encryption for data transmission</li>
+            <li><strong>Access Controls:</strong> Limited access to personal information</li>
+            <li><strong>Regular Updates:</strong> Security patches and system updates</li>
+            <li><strong>Monitoring:</strong> Continuous security monitoring and threat detection</li>
+        </ul>
+
+        <h3><i class="fas fa-database"></i> Data Storage</h3>
+        <ul>
+            <li>Secure servers with restricted physical access</li>
+            <li>Regular backups and disaster recovery procedures</li>
+            <li>Data retention policies to minimize stored information</li>
+            <li>Secure disposal of obsolete data</li>
+        </ul>
+
+        <div class="info-box warning">
+            <h3><i class="fas fa-exclamation-triangle"></i> Data Breach Protocol</h3>
+            <p>In the unlikely event of a data breach, we will notify affected users and relevant authorities within 72 hours, as required by applicable data protection laws.</p>
+        </div>
+    </div>
+
+    <!-- Your Rights -->
+    <div id="your-rights" class="content-card">
+        <h2>Your Rights</h2>
+
+        <h3><i class="fas fa-user-check"></i> Data Subject Rights</h3>
+        <p>Under applicable data protection laws, you have the following rights:</p>
+        <ul>
+            <li><strong>Access:</strong> Request copies of your personal information</li>
+            <li><strong>Rectification:</strong> Correct inaccurate or incomplete information</li>
+            <li><strong>Erasure:</strong> Request deletion of your personal information</li>
+            <li><strong>Portability:</strong> Receive your data in a structured format</li>
+            <li><strong>Objection:</strong> Object to certain types of processing</li>
+            <li><strong>Restriction:</strong> Limit how we use your information</li>
+        </ul>
+
+        <h3><i class="fas fa-envelope"></i> Exercising Your Rights</h3>
+        <p>To exercise any of these rights, please contact us using the information provided below. We will respond to your request within 30 days.</p>
+
+        <div class="info-box success">
+            <h3><i class="fas fa-check-circle"></i> No Fees</h3>
+            <p>We do not charge any fees for processing your data protection requests, unless the request is clearly unfounded or excessive.</p>
+        </div>
+    </div>
+
+    <!-- Contact Information -->
+    <div id="contact" class="content-card">
+        <h2>Contact Information</h2>
+
+        <h3><i class="fas fa-envelope"></i> Data Protection Officer</h3>
+        <p>If you have any questions about this Privacy Policy or our data practices, please contact our Data Protection Officer:</p>
+
+        <div class="highlight-box">
+            <h3><i class="fas fa-address-card"></i> Contact Details</h3>
+            <p>
+                <strong>Email:</strong> privacy@slotsrating.com<br>
+                <strong>Address:</strong> [Your Business Address]<br>
+                <strong>Phone:</strong> [Your Phone Number]<br>
+                <strong>Response Time:</strong> Within 48 hours
+            </p>
+        </div>
+
+        <h3><i class="fas fa-edit"></i> Policy Updates</h3>
+        <p>We may update this Privacy Policy from time to time. We will notify you of any material changes by:</p>
+        <ul>
+            <li>Posting a notice on our website</li>
+            <li>Sending an email notification</li>
+            <li>Updating the "Last Updated" date</li>
+        </ul>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h5>SlotsRating</h5>
+                <p>Your premier destination for sophisticated casino reviews and expert gaming insights.</p>
+                <div class="footer-social">
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
                 </div>
             </div>
 
-            <div class="footer-bottom">
-                <p>&copy; 2025 Slotsrating. All rights reserved.</p>
-                <div class="footer-disclaimer">
-                    <p><strong>Disclaimer:</strong> This website contains affiliate links. We may receive compensation when you click on links to partner sites. Gambling can be addictive. Please play responsibly and only gamble what you can afford to lose.</p>
-                    <p style="margin-top: 1rem;">
-                        <i class="fas fa-exclamation-triangle" style="color: var(--warning); margin-right: 0.5rem;"></i>
-                        <strong>18+ Only</strong> • Gambling can be addictive • Play responsibly
-                    </p>
-                </div>
+            <div class="footer-section">
+                <h5>Casino Reviews</h5>
+                <ul class="footer-links">
+                    <li><a href="#">Top Rated Casinos</a></li>
+                    <li><a href="#">New Casino Reviews</a></li>
+                    <li><a href="#">Live Casino Guide</a></li>
+                    <li><a href="#">Mobile Casinos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h5>Gaming Guides</h5>
+                <ul class="footer-links">
+                    <li><a href="#">Slot Strategies</a></li>
+                    <li><a href="#">Bonus Guide</a></li>
+                    <li><a href="#">Payment Methods</a></li>
+                    <li><a href="#">Security Tips</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h5>Support</h5>
+                <ul class="footer-links">
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
             </div>
         </div>
-    </footer>
 
+        <div class="footer-bottom">
+            <p>&copy; 2025 SlotsRating. All rights reserved. | 18+ | Play Responsibly</p>
+        </div>
+    </div>
+</footer>
 
+<!-- Live Chat Widget -->
+<div class="live-chat" id="liveChat">
+    <i class="fas fa-comment"></i>
+</div>
+
+<!-- Back to Top Button -->
+<div class="back-to-top" id="backToTop">
+    <i class="fas fa-chevron-up"></i>
+</div>
+
+<!-- Cookie Consent -->
+<div class="cookie-consent" id="cookieConsent">
+    <div class="cookie-content">
+        <p class="cookie-text">
+            We use cookies to enhance your experience and provide personalized content.
+            By continuing to use our site, you agree to our
+            <a href="/cookie-policy.html">Cookie Policy</a>.
+        </p>
+        <div class="cookie-actions">
+            <button class="cookie-btn cookie-btn-accept" id="acceptCookies">Accept All</button>
+            <button class="cookie-btn cookie-btn-decline" id="declineCookies">Decline</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Header scroll effect
+    const header = document.getElementById('header');
+    const scrollProgress = document.querySelector('.scroll-progress');
+    const backToTop = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', () => {
+        const scrollTop = window.pageYOffset;
+        const docHeight = document.body.offsetHeight - window.innerHeight;
+        const scrollPercent = (scrollTop / docHeight) * 100;
+
+        scrollProgress.style.width = scrollPercent + '%';
+
+        if (scrollTop > 100) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+
+        // Back to Top Button visibility
+        if (scrollTop > 500) {
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
+    });
+
+    // Mobile menu toggle
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    mobileMenuToggle.addEventListener('click', () => {
+        mobileMenuToggle.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+    });
+
+    // Close mobile menu when clicking on a link
+    const mobileMenuLinks = document.querySelectorAll('.mobile-menu-items a');
+    mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenuToggle.classList.remove('active');
+            mobileMenu.classList.remove('active');
+        });
+    });
+
+    // Back to Top Button
+    backToTop.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Cookie consent
+    const cookieConsent = document.getElementById('cookieConsent');
+    const acceptCookies = document.getElementById('acceptCookies');
+    const declineCookies = document.getElementById('declineCookies');
+
+    // Show cookie consent if not already accepted
+    if (!localStorage.getItem('cookieConsent')) {
+        setTimeout(() => {
+            cookieConsent.classList.add('visible');
+        }, 2000);
+    }
+
+    acceptCookies.addEventListener('click', function() {
+        localStorage.setItem('cookieConsent', 'accepted');
+        cookieConsent.classList.remove('visible');
+    });
+
+    declineCookies.addEventListener('click', function() {
+        localStorage.setItem('cookieConsent', 'declined');
+        cookieConsent.classList.remove('visible');
+    });
+
+    // Live chat widget
+    const liveChat = document.getElementById('liveChat');
+    liveChat.addEventListener('click', function() {
+        // Simulate opening chat
+        alert('Live chat would open here in a real implementation!');
+    });
+
+    // Smooth scrolling for table of contents
+    const tocLinks = document.querySelectorAll('.toc-list a');
+    tocLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetId = link.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                const offsetTop = targetElement.offsetTop - 100;
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
+    // Highlight active section in table of contents
+    const sections = document.querySelectorAll('[id]');
+    const navLinks = document.querySelectorAll('.toc-list a');
+
+    function highlightActiveSection() {
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 150;
+            const sectionHeight = section.offsetHeight;
+            if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${current}`) {
+                link.classList.add('active');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', highlightActiveSection);
+</script>
 </body>
 </html>

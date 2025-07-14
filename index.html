@@ -842,7 +842,7 @@
 
       /* Enhanced Casino Cards */
       .casino-section {
-        padding: 8rem 0;
+        padding: 4rem 0 2rem 0;
         position: relative;
       }
 
@@ -871,7 +871,7 @@
       .section-subtitle {
         font-size: 1.3rem;
         color: var(--text-secondary);
-        max-width: 700px;
+        max-width: 900px;
         margin: 0 auto;
         line-height: 1.7;
       }
@@ -1667,6 +1667,112 @@
           inset 0 1px 0 rgba(255, 255, 255, 0.2);
       }
 
+      /* GoldenMister Vertical Sections */
+      .goldenmister-sections {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+      }
+
+      .goldenmister-section {
+        display: flex;
+        align-items: flex-start;
+        gap: 2rem;
+        background: var(--bg-glass);
+        backdrop-filter: blur(var(--blur));
+        padding: 3rem;
+        border-radius: var(--border-radius-lg);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        transition: var(--transition);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .goldenmister-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: var(--gradient-blue);
+        transform: scaleX(0);
+        transition: transform 0.4s ease;
+      }
+
+      .goldenmister-section:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-strong);
+        border-color: var(--teal);
+      }
+
+      .goldenmister-section:hover::before {
+        transform: scaleX(1);
+      }
+
+      .goldenmister-section .feature-icon {
+        flex-shrink: 0;
+        margin: 0;
+      }
+
+      .goldenmister-content {
+        flex: 1;
+      }
+
+      .goldenmister-content h4 {
+        font-family: 'Righteous', sans-serif;
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        color: var(--text-primary);
+      }
+
+      .goldenmister-content p {
+        color: var(--text-secondary);
+        line-height: 1.8;
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+      }
+
+      .goldenmister-content p:last-child {
+        margin-bottom: 0;
+      }
+
+      /* Apply different gradient colors to each section */
+      .goldenmister-section:nth-child(1)::before {
+        background: var(--gradient-gold);
+      }
+
+      .goldenmister-section:nth-child(2)::before {
+        background: var(--gradient-pink);
+      }
+
+      .goldenmister-section:nth-child(3)::before {
+        background: var(--gradient-blue);
+      }
+
+      .goldenmister-section:nth-child(4)::before {
+        background: var(--gradient-purple);
+      }
+
+      .goldenmister-section:nth-child(5)::before {
+        background: var(--gradient-teal);
+      }
+
+      /* Responsive design for GoldenMister sections */
+      @media (max-width: 768px) {
+        .goldenmister-section {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          padding: 2.5rem 2rem;
+        }
+
+        .goldenmister-section .feature-icon {
+          margin-bottom: 1.5rem;
+        }
+      }
+
       .feature-card h4 {
         font-family: 'Righteous', sans-serif;
         font-size: 1.8rem;
@@ -2039,6 +2145,203 @@
             <div class="stat-number">24/7</div>
             <div class="stat-label">Expert Support</div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GoldenMister Section -->
+    <section class="casino-section" id="goldenmister">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            UK's Premier Online Casino Experience - GoldenMister
+          </h2>
+          <p class="section-subtitle">
+            Welcome to GoldenMister, the UK's most trusted and exciting online
+            casino UK destination. As a fully licensed and regulated operator
+            under the UK Gambling Commission, we provide British players with an
+            unparalleled gaming experience featuring over 2000 premium slot
+            games UK and the most generous free spins no deposit UK bonus in the
+            market.
+          </p>
+          <p class="section-subtitle">
+            Our commitment to excellence has made us the go-to choice for
+            discerning UK players seeking real money slots with fair play, rapid
+            payouts, and exceptional customer service. Whether you're a seasoned
+            player or new to gambling sites, GoldenMister offers the perfect
+            blend of entertainment, security, and rewarding gameplay.
+          </p>
+        </div>
+
+        <div class="goldenmister-sections">
+          <div class="goldenmister-section">
+            <div class="feature-icon">
+              <i class="fas fa-dice"></i>
+            </div>
+            <div class="goldenmister-content">
+              <h4>Extensive Collection of Real Money Slots</h4>
+              <p>
+                At GoldenMister, we pride ourselves on offering the most
+                comprehensive selection of real money slots available to UK
+                players. Our carefully curated game library features titles from
+                industry-leading providers including Pragmatic Play, NetEnt,
+                Microgaming, and Play'n GO. Popular favourites like Sweet
+                Bonanza, Rainbow Riches, and Book of Dead sit alongside
+                exclusive releases and progressive jackpot games worth millions.
+              </p>
+              <p>
+                Our slot games UK collection is updated weekly with the latest
+                releases, ensuring our players always have access to
+                cutting-edge gaming technology and innovative features. From
+                classic fruit machines to modern video slots with multiple bonus
+                rounds, our diverse portfolio caters to every taste and playing
+                style.
+              </p>
+            </div>
+          </div>
+
+          <div class="goldenmister-section">
+            <div class="feature-icon">
+              <i class="fas fa-gift"></i>
+            </div>
+            <div class="goldenmister-content">
+              <h4>Unmatched Free Spins No Deposit UK Bonus</h4>
+              <p>
+                New players at GoldenMister receive an industry-leading 50 free
+                spins no deposit UK bonus upon registration. This generous
+                welcome offer allows you to explore our premium slot games and
+                potentially win real money without risking your own funds.
+                Unlike other gambling sites that impose restrictive terms, our
+                free spins come with fair wagering requirements and realistic
+                win caps.
+              </p>
+              <p>
+                Our ongoing promotions program ensures existing players continue
+                to benefit from regular free spins offers, reload bonuses, and
+                exclusive tournaments. As a UKGC casino, all our promotions
+                comply with strict UK advertising standards and responsible
+                gambling guidelines.
+              </p>
+            </div>
+          </div>
+
+          <div class="goldenmister-section">
+            <div class="feature-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <div class="goldenmister-content">
+              <h4>UKGC Licensed & Secure Gaming Environment</h4>
+              <p>
+                Player safety and security are paramount at GoldenMister. As a
+                licensed UKGC casino, we operate under the strictest regulatory
+                standards in the industry. Your personal data is protected using
+                advanced SSL encryption technology, while our games are
+                regularly audited for fairness by independent testing agencies.
+              </p>
+              <p>
+                Our commitment to responsible gambling includes comprehensive
+                player protection tools, deposit limits, reality checks, and
+                partnerships with leading UK gambling support organizations. We
+                maintain the highest standards of customer service with 24/7
+                support available via live chat, email, and telephone.
+              </p>
+            </div>
+          </div>
+
+          <div class="goldenmister-section">
+            <div class="feature-icon">
+              <i class="fas fa-money-bill-wave"></i>
+            </div>
+            <div class="goldenmister-content">
+              <h4>Lightning-Fast Payouts & Payment Options</h4>
+              <p>
+                GoldenMister sets the standard for rapid withdrawals among UK
+                online casino operators. Our same-day payout promise ensures
+                your winnings reach your account within hours, not days. We
+                support all major UK payment methods including Visa, Mastercard,
+                PayPal, Skrill, Neteller, and direct bank transfers.
+              </p>
+              <p>
+                Our finance team processes withdrawal requests 24/7, with most
+                e-wallet withdrawals completed within 2 hours. Traditional
+                banking methods typically clear within 24 hours, making us one
+                of the fastest-paying gambling sites in the UK market.
+              </p>
+            </div>
+          </div>
+
+          <div class="goldenmister-section">
+            <div class="feature-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <div class="goldenmister-content">
+              <h4>Award-Winning Mobile Casino App</h4>
+              <p>
+                Experience the future of mobile gaming with our award-winning
+                casino app, available for iOS and Android devices. Our mobile
+                platform features the full selection of real money slots
+                optimized for touch-screen play, with stunning graphics and
+                smooth gameplay that rivals desktop quality.
+              </p>
+              <p>
+                The GoldenMister mobile app includes exclusive mobile-only
+                bonuses, push notifications for special offers, and biometric
+                login for enhanced security. Whether commuting, relaxing at
+                home, or on holiday, your favourite slot games UK are always at
+                your fingertips.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bonus-card"
+          style="
+            margin-top: 3rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+          "
+        >
+          <div
+            class="feature-icon"
+            style="margin: 0 auto 2rem; background: var(--gradient-purple)"
+          >
+            <i class="fas fa-users"></i>
+          </div>
+          <h4
+            style="
+              font-family: 'Righteous', sans-serif;
+              font-size: 2.2rem;
+              font-weight: 800;
+              margin-bottom: 1.5rem;
+              color: var(--text-primary);
+            "
+          >
+            Join the UK's #1 Casino Community
+          </h4>
+          <p
+            style="
+              font-size: 1.2rem;
+              color: var(--text-secondary);
+              line-height: 1.8;
+              margin-bottom: 2rem;
+            "
+          >
+            Join the thousands of satisfied UK players who have made
+            GoldenMister their preferred online casino UK destination. With our
+            unbeatable combination of game variety, generous bonuses, rapid
+            payouts, and exceptional customer service, we're confident you'll
+            discover why we're rated as the UK's #1 casino site.
+          </p>
+          <a
+            href="#"
+            class="casino-btn casino-btn-primary"
+            style="max-width: 300px; margin: 0 auto"
+          >
+            <i class="fas fa-play"></i>
+            <span>Join Now</span>
+          </a>
         </div>
       </div>
     </section>

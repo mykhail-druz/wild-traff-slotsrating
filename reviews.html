@@ -54,6 +54,11 @@
     />
     <link
       rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Righteous&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      as="style"
+    />
+    <link
+      rel="preload"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
       as="style"
     />
@@ -69,6 +74,10 @@
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
 
@@ -190,7 +199,7 @@
       }
 
       body {
-        font-family: 'Inter', sans-serif;
+        font-family: 'Rubik', sans-serif;
         background: var(--bg-primary);
         color: var(--text-primary);
         line-height: 1.6;
@@ -429,7 +438,7 @@
       }
 
       .logo {
-        font-family: 'Playfair Display', serif;
+        font-family: 'Righteous', sans-serif;
         font-size: 2.2rem;
         font-weight: 800;
         background: var(--gradient-gold);
@@ -569,7 +578,7 @@
         text-decoration: none;
         font-size: 2rem;
         font-weight: 600;
-        font-family: 'Playfair Display', serif;
+        font-family: 'Righteous', sans-serif;
         background: var(--gradient-gold);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -662,7 +671,7 @@
       }
 
       .hero h1 {
-        font-family: 'Playfair Display', serif;
+        font-family: 'Righteous', sans-serif;
         font-size: clamp(3.5rem, 7vw, 7rem);
         font-weight: 900;
         line-height: 1.3;
@@ -873,7 +882,7 @@
         font-weight: 900;
         font-size: 1.2rem;
         color: var(--bg-primary);
-        font-family: 'Playfair Display', serif;
+        font-family: 'Righteous', sans-serif;
         box-shadow: var(--shadow-medium);
         border: 3px solid var(--bg-card);
         z-index: 10;
@@ -917,7 +926,7 @@
         font-size: 1.5rem;
         font-weight: 800;
         color: var(--primary);
-        font-family: 'Playfair Display', serif;
+        font-family: 'Righteous', sans-serif;
         position: relative;
         z-index: 2;
       }
@@ -951,7 +960,7 @@
         font-weight: 800;
         font-size: 1.1rem;
         color: var(--text-primary);
-        font-family: 'Playfair Display', serif;
+        font-family: 'Righteous', sans-serif;
       }
 
       .license-badge {
@@ -966,7 +975,7 @@
 
       /* Casino Info */
       .casino-info h2 {
-        font-family: 'Playfair Display', serif;
+        font-family: 'Righteous', sans-serif;
         font-size: 2rem;
         font-weight: 800;
         margin-bottom: 1.5rem;
@@ -1129,7 +1138,7 @@
         margin-bottom: 1.5rem;
         font-size: 1.3rem;
         font-weight: 700;
-        font-family: 'Playfair Display', serif;
+        font-family: 'Righteous', sans-serif;
       }
 
       .cons h4 {
@@ -1140,7 +1149,7 @@
         margin-bottom: 1.5rem;
         font-size: 1.3rem;
         font-weight: 700;
-        font-family: 'Playfair Display', serif;
+        font-family: 'Righteous', sans-serif;
       }
 
       .pros h4::before {
@@ -1243,7 +1252,7 @@
       .bonus-amount {
         font-size: 2rem;
         font-weight: 900;
-        font-family: 'Playfair Display', serif;
+        font-family: 'Righteous', sans-serif;
         margin-bottom: 0.5rem;
       }
 
@@ -1270,7 +1279,7 @@
         overflow: hidden;
         text-transform: uppercase;
         letter-spacing: 1px;
-        font-family: 'Inter', sans-serif;
+        font-family: 'Rubik', sans-serif;
       }
 
       .btn::before {
@@ -1328,7 +1337,7 @@
       .casino-features h5 {
         color: var(--text-primary);
         margin-bottom: 1rem;
-        font-family: 'Playfair Display', serif;
+        font-family: 'Righteous', sans-serif;
         font-size: 1.1rem;
       }
 
@@ -1485,7 +1494,7 @@
       }
 
       .footer-section h5 {
-        font-family: 'Playfair Display', serif;
+        font-family: 'Righteous', sans-serif;
         font-size: 1.4rem;
         font-weight: 700;
         margin-bottom: 2rem;
@@ -2312,8 +2321,8 @@
       // Live chat widget
       const liveChat = document.getElementById('liveChat');
       liveChat.addEventListener('click', function () {
-        // Simulate opening chat
-        alert('Live chat would open here in a real implementation!');
+        // Chat functionality would be implemented here
+        console.log('Live chat clicked');
       });
 
       // Search functionality
